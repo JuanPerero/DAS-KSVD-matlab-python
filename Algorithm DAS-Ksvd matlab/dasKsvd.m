@@ -80,7 +80,7 @@ for iteration = 1:parser.Results.I
     
     % apply discriminative criterion
     [m_comb, ell_j_plus, ell_j_star] = feval(parser.Results.disc_function, parser.Results.discMeasureParams, params.data, Phi, A, labels(index_out));               % evaluate discriminative measure
-    
+     
     for i = 1:n_g_comb
         %Phi_D{i} = zeros(N,parser.Results.I*k); % structured dictionary assembling
         %Revisar, probablemente la linea anterior va por fuera del for
